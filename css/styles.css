@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:100,400,700,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -9,16 +11,166 @@ html{
 
 body{
     font-size: 1rem;
+    font-family: 'Work Sans', sans-serif;
 }
 
 #navbar{
     position: fixed;
     top: 0;
     left: 0;
+    width: 100vw;
+    height: 8rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem;
+}
+
+#logo{
+    width: 50px;
+    height: auto;
+    color: rgb(255,255,255);
+    transition: opacity .25s ease-in-out;
+    opacity: .3;
+}
+
+#logo:hover{
+    opacity: 1;
+}
+
+#navbar-links{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+#navbar-links li a{
+    text-decoration: none;
+    font-size: 3rem;
+    padding-left: 5rem;
+    color: rgb(255,255,255);
+    transition: all .25s ease-in-out;
+    opacity: .3;
+}
+
+#navbar-links li a:hover{
+    color: rgb(255,255,255);
+    opacity: 1;
+}
+
+main{
+    width: 100%;
 }
 
 section{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#welcome-section{
+    background-color: rgb(255, 66, 73);
+    color: rgb(242, 242, 242);
+}
+
+#projects{
+    background-color: rgb(213, 213, 213);
+}
+
+.container-tiles{
+    display: grid;
+    padding: 8rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 4rem;
+}
+
+
+.project-tile img{
+    width: 100%;
+    height: auto;
+    display: block;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    margin-bottom: 2rem;
+}
+
+#contact{
+    background-color: rgb(230, 60, 65);
+    color: aliceblue;
+}
+
+h1,h2{
+    color: (242, 242, 242);
+}
+
+h1{
+    font-size: 10rem;
+    line-height: 12rem;
+    margin-bottom: 4rem;
+}
+
+h2{
+    font-size: 6rem;
+    line-height: 8rem;
+    margin-bottom: 4rem;
+}
+
+.presentation{
+    font-size: 4rem;
+    margin-bottom: 4rem;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+#projects a{
+    color: black;
+}
+
+#contact p{
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+
+#contact ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact li{
+    font-size: 3rem;
+    padding: 4rem;
+
+}
+
+#contact a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+footer{
+    background-color: #ff4447;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    color: aliceblue;
 }
